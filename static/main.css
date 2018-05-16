@@ -1,0 +1,357 @@
+body, h3, ul, section, .coda, #nav, #main, #ufo, .nav-item, .shot, .thumb {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, #nav, .note, .precis {
+  clear: both;
+  font-weight: normal;
+}
+
+p, li {
+  margin: 0 0 0.5em 0;
+}
+
+a, .shot a, .nav-link {
+  text-decoration: none;
+}
+
+#nav {
+  list-style-type: none;
+}
+
+body {
+  background: #639;
+  color: #000;
+  font: 0.85em/1.6em sans-serif;
+}
+
+section {
+  min-height: 500px;
+  padding: 1em 3em 6em 10px;
+}
+
+h1 {
+  border-bottom: 1px dotted #000;
+  font-size: 1.5em;
+  margin: 0 0 0.5em -10px;
+  padding: 13px 0 6px 10px;
+}
+
+h2 {
+  border-bottom: 1px dotted #63f;
+  font-size: 1.3em;
+  line-height: 0.8em;
+  margin: 2em 0 10px -10px;
+  padding: 0 0 0 10px;
+  width: 80%;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 1em 0 0 0;
+}
+
+p {
+  padding: 0 0 1em 0;
+}
+
+ul {
+  margin: 0.5em 0 2em 2em;
+}
+
+a {
+  background-color: inherit;
+  color: #63f;
+}
+a:hover {
+  border-bottom: 1px dashed;
+}
+
+code {
+  background: #f3f3f3;
+  padding: 0.1em 0.5em;
+  font-size: 0.9em;
+}
+
+pre {
+  margin: 0 0 1em 0;
+  white-space: pre-wrap;
+}
+
+.coda {
+  display: inline-block;
+  line-height: 5em;
+  margin: 0 1em;
+}
+
+.nav-link, .link-light {
+  color: #c9f;
+}
+
+#nav {
+  position: absolute;
+  top: 180px;
+  left: 650px;
+  width: 130px;
+}
+  .nav-item {
+    font-weight: bold;
+    margin: 2em 0;
+  }
+  .nav-link {
+    background: #000;
+    padding: 1em 0.5em;
+  }
+  .nav-link:hover {
+    border-bottom: 5px solid;
+  }
+
+  .nav-current {
+    background: #fff;
+    color: #93f;
+  }
+
+#main {
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  border-bottom: 0;
+  background: #fff;
+  margin: 0 auto;
+  width: 650px;
+  position: relative;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+  padding: 0 0 3em 0;
+  text-align: center;
+}
+
+#ufo {
+  height: 450px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: -202px;
+}
+
+.inflate {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.note {
+  font-size: 0.85em;
+  margin: 0 0 2em 0;
+}
+
+.precis {
+  border-right: 5px solid #f0f0fc;
+  border-radius: 20px;
+  margin: 0 0 3em 0;
+  overflow: hidden;
+}
+
+.snippet {
+  display: block;
+}
+
+.thumb {
+  border: 1px solid #999;
+  margin: 0 0 1em 1em;
+}
+
+.shot {
+  float: right;
+}
+
+.note {
+  text-align: right;
+}
+
+.precis, .snippet {
+  padding: 1em;
+}
+
+.shot a, a#ufo, a img {
+  border: 0;
+}
+
+@media all and (max-width: 1000px) {
+  #ufo {
+    height: auto;
+    width: 150px;
+    left: -152px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  #ufo {
+    width: 100px;
+    left: -102px;
+  }
+
+  .nav-item {
+    font-weight: normal;
+  }
+}
+
+@media all and (max-width: 850px) {
+  #ufo {
+    width: 70px;
+    left: -72px;
+  }
+
+  #nav {
+    position: relative;
+    top: -10px;
+    left: 0;
+    overflow: hidden;
+  }
+}
+
+@media all and (max-width: 800px) {
+  body {
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .coda, #main {
+    border: none;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+
+  section {
+    background: #fff;
+    border-bottom: 1px solid #000;
+    margin: 0;
+  }
+
+  #main {
+    background: #96c;
+  }
+
+  #nav {
+    width: 70%;
+  }
+
+  .nav-item {
+    font-weight: bold;
+    margin: 2em 0;
+  }
+  .nav-link {
+    padding: 1em 5em 1em 2em;
+  }
+
+  footer {
+    clear: both;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .coda {
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0 0 2px 0;
+    line-height: 2em;
+    clear: both;
+  }
+
+  #ufo {
+    position: static;
+    margin: 0 0 -500px 0;
+    float: right;
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  body {
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  section, .coda, #main {
+    border: none;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+
+  section {
+    margin: 0 1em;
+  }
+
+  footer {
+    clear: both;
+    padding: 0;
+    width: 100%;
+    margin: 2em 0 0 0;
+  }
+
+  #nav {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    clear: both;
+    width: 100%;
+  }
+    .nav-item {
+      text-align: center;
+      margin: 0.5em 0;
+      padding: 0;
+      width: 100%;
+    }
+    .nav-link {
+      padding: 1em;
+      margin: 0 auto 2px auto;
+      width: 90%;
+      display: block;
+      background: #639;
+      color: #f9f;
+      border-radius: 5px 15px 5px 15px;
+      line-height: 1em;
+    }
+    a:hover {
+      border: 0 !important;
+    }
+
+  #main {
+    background: #fff;
+  }
+
+  #ufo {
+    display: none;
+  }
+
+  .shot {
+    clear: both;
+    display: block;
+    float: none;
+  }
+  .thumb {
+    height: auto;
+    width: 90%;
+  }
+
+  .note {
+    text-align: left;
+    border-bottom: 5px dashed #63f;
+    margin: 0 0 3em 0;
+    padding: 0 0 1em 0;
+    width: 90%;
+  }
+}

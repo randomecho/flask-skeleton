@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head>
+<meta charset="utf-8">
+<title>Soon Van</title>
+<link rel="author" href="http://randomecho.com/">
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Soon Van - An Australian web developer based in Kentucky" />
+<meta name="author" content="Soon Van">
+<meta name="dcterms.rightsHolder" content="Soon Van">
+<meta name="dcterms.dateCopyrighted" content="2005">
+</head><body>
+<div id="main"><section>
+{% block body %}{% endblock %}
+</section>
+<a href="/" title="back to front"><img src="/chair.png" alt="" id="ufo"></a>
+<nav><ul id="nav">
+{% for key in site_links %}
+    {% if slug == key %}
+    {% set css_class = "nav-current" %}
+    {% endif %}
+    <li class="nav-item"><a href="/{{ key }}/" title="{{ site_links[key].title }}" class="nav-link {{ css_class }}">{{ site_links[key].display }}</a></li>
+{% endfor %}
+</ul></nav>
+</div>
+<footer>
+<span class="coda"><a href="/contact-soon/" class="link-light" title="how to contact me">Soon Van</a></span>
+</footer>
+</body></html>
