@@ -27,33 +27,41 @@ site_links = {
     }
 }
 
+
 @app.route("/")
 def index():
     return render_template("index.html", site_links=site_links, slug="home")
+
 
 @app.route("/about/")
 def about():
     return render_template("about.html", site_links=site_links, slug="about")
 
+
 @app.route("/written-by-soon-van/")
 def author():
     return render_template("author.html", site_links=site_links, slug="written-by-soon-van")
+
 
 @app.route("/contact-soon/")
 def contact():
     return render_template("contact.html", site_links=site_links, slug="contact-soon")
 
+
 @app.route("/source/")
 def repos():
     return render_template("repos.html", site_links=site_links, slug="source")
+
 
 @app.route("/websites/")
 def websites():
     return render_template("websites.html", site_links=site_links, slug="websites")
 
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("missing.html", site_links=site_links), 404
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
